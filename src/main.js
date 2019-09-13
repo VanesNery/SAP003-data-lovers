@@ -1,5 +1,4 @@
 //exibição dos dados na tela    
-
 function mostrar() {
     event.preventDefault();
     const name = document.createTextNode(pokemons[i].name); 

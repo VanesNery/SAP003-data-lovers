@@ -5,7 +5,6 @@
     font-family: cursive;
     color:yellow
 }
-
 .divmain{
     width: 150px;
     height: 150px;
@@ -31,7 +30,6 @@
     border-radius: 10px;
     transform: translate(200%, 20%)
 } 
-
 .body{
     display: contents;
     background-image: url(pokemon-go-logo.webp);

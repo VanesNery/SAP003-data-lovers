@@ -21,6 +21,4 @@ function listPokemon () {
     // adiciona o novo elemento criado e seu conteúdo ao DOM 
     const divAtual = document.getElementById("div1"); 
     document.body.insertBefore (divNova, divAtual); 
-  } 
-}
-
+  }
