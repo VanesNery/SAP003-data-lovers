@@ -1,0 +1,15 @@
+.divmain{
+    position: static;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    padding: 20px;
+}
+.search{
+    width: 500px;
+}
+.optionFilter{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+}
