@@ -1,30 +1,26 @@
-// esta é uma função de exemplo
-// veja como agregamos a função ao objeto global window
+//FUNÇOES AQUIIIIII
 
-/*const example = () => {
-  return 'example';
-};
+document.body.onload = listPokemon;
 
-window.example = example;*/
+function listPokemon () { 
+  // cria um novo elemento div e dá à ele conteúdo
+ const pokemons = POKEMON.pokemon
 
-document.body.onload = adcElemento;
-
-function adcElemento () { 
-  // cria um novo elemento div 
-  // e dá à ele conteúdo
-  for(i=0; i<=10; i++){
-    var divNova = document.createElement("div"); 
-    var name = document.createTextNode(POKEMON.pokemon[i].name); 
-    var id = document.createTextNode(POKEMON.pokemon[i].id);
-    var img = document.createElement('img');
-    img.src = POKEMON.pokemon[i].img;
-    //var img.src = POKEMON.pokemon[i].img;
-    divNova.appendChild(id); //adiciona o nó de texto à nova div criada 
+  for(const i of pokemons){
+    const divNova = document.createElement("div");
+    divNova.setAttribute("class", "divmain")
+    const name = document.createTextNode("\n"+i.name); 
+    const id = document.createTextNode("\n"+i.id);
+    const img = document.createElement('img');
+    img.src = i.img;
+    //adiciona o nó de texto à nova div criada 
+    divNova.appendChild(id); 
     divNova.appendChild(name);
     divNova.appendChild(img);
+    
     // adiciona o novo elemento criado e seu conteúdo ao DOM 
-    var divAtual = document.getElementById("div1"); 
-    document.body.insertBefore(divNova, divAtual); 
-  }
- 
+    const divAtual = document.getElementById("div1"); 
+    document.body.insertBefore (divNova, divAtual); 
+  } 
 }
+
