@@ -1,15 +1,38 @@
+.Logo{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color:yellow
+}
 .divmain{
-    position: static;
     width: 150px;
     height: 150px;
     display: inline-block;
     padding: 20px;
+    border:yellow;
+    border-style: solid;
+    border-radius: 10px;
+    transform: translate3d(100px, 50px, 50px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: deepskyblue;
 }
 .search{
     width: 500px;
+    height: 35px;
+    border-radius: 10px;
+    transform: translate(50%, 20%)
 }
 .optionFilter{
     width: 150px;
     height: 35px;
     border-radius: 10px;
+    transform: translate(200%, 20%)
+} 
+.body{
+    display: contents;
+    background-image: url(pokemon-go-logo.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
