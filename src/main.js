@@ -1,9 +1,33 @@
 //exibição dos dados na tela    
-function mostrar() {
-    event.preventDefault();
-    const name = document.createTextNode(pokemons[i].name); 
-    const id = document.createTextNode(pokemons[i].id);
-    const img = document.createElement('img');
-    let mostrar = window.data.adcElemento(name, id, img);
-    const divAtual = document.getElementById("div1"); 
-} 
+const pokemons = POKEMON.pokemon;
+const filtro = document.getElementById("optionFilter");
+const show = document.getElementById("show");
+
+// window.onload = listPokemon => {
+//     event.preventDefault();
+//     const divAtual = document.getElementById("div1"); 
+//     const divNova = document.getElementById("divmain");
+//     const listP = window.data.listPokemon();
+// } 
+
+filtro.addEventListener("change", lTypes);
+
+window.onload = () =>{
+    lTypes (pokemons);
+}
+
+function lTypes () { 
+const pTypes = [];
+pokemons.map(pokemons => pokemons.type.map(type => {
+    if(!pTypes.includes(type)){
+        pTypes.push(type);
+    }else{
+            return false;
+        }
+    }
+));
+
+// filtro.innerHTML ="";
+// filtro.innerHTML = `<option value="name">-- Filtro --</option>`;
+// filtro.innerHTML += pTypes.map(`<option value="${type}">${type}</option>`).join("");
+}
