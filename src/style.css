@@ -6,18 +6,18 @@
     color:yellow
 }
 
-.divmain{
-    width: 150px;
-    height: 150px;
+.list-poke{
     display: inline-block;
-    padding: 20px;
-    border:yellow;
+    background-color: rgb(215, 242, 247);
+    border:rgb(0, 140, 255);
     border-style: solid;
     border-radius: 10px;
+    width: 150px;
+    height: 180px;
+    padding: 20px;
     transform: translate3d(100px, 50px, 50px);
     margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: deepskyblue;
+    margin-bottom: 20px; 
 }
 .search{
     width: 500px;
@@ -33,8 +33,10 @@
 } 
 
 .body{
-    display: contents;
-    background-image: url(pokemon-go-logo.webp);
-    background-repeat: no-repeat;
+    background: url(times-pokemon.png) ;
     background-attachment: fixed;
+    background-size: 100%;
 }
+
+
+ 
