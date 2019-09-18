@@ -5,7 +5,7 @@
     font-family: cursive;
     color:yellow
 }
-.divmain{
+.card{
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -16,7 +16,10 @@
     transform: translate3d(40px, 50px, 50px);
     margin-right: 20px;
     margin-bottom: 20px;
-    background-color: deepskyblue;
+    background-color: transparent;
+}
+.card h2{
+    font-size: 1.2em;
 }
 .search{
     width: 500px;
@@ -31,8 +34,7 @@
     transform: translate(200%, 20%)
 } 
 .body{
-    display: contents;
-    background-image: url(pokemon-go-logo.webp);
+    background-image: url(pokemon-go-teams.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
