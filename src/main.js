@@ -5,6 +5,7 @@ const show = document.getElementById("show");
 
 window.onload = () => {
     listPoke ();
+    lTypes (pokemons);
 }
 
 function listPoke (){
@@ -16,24 +17,20 @@ pokemons.map(pokemon => show.innerHTML += `
     </div>
 `);
 }
-// const filter = app.listTypes(pokemons, lTypes.value);
 
-// filtro.addEventListener("change", listTypes);
+filtro.addEventListener("change", listPokemon);
+const filter = app.listTypes(pokemons, lTypes.value);
 
-// window.onload = () => {
-//     lTypes ();
-// }
-
-// function lTypes () { 
-// const pTypes = [];
-// pokemons.map(pokemons => pokemons.type.map(type => {
-//     if(!pTypes.includes(type)){
-//         pTypes.push(type);
-//     }else{
-//             return false;
-//     }
-//     }
-// ));
-// filtro.innerHTML = `<option value="name">-- Filtro --</option>`;
-// filtro.innerHTML += (`<option value="${lTypes}">${lTypes}</option>`).join("");
-// }
+function lTypes (pokemons) {
+    const pTypes = [];
+    pokemons.map(pokemons => pokemons.type.map(type => {
+        if (!pTypes.includes(type)){
+            pTypes.push(type);
+        } else{
+            return false;
+        }
+    }));
+    filtro.innerHTML += "";
+    filtro.innerHTML += `<option value="none">-- Filtro -- </option>`;
+    filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
+}
