@@ -7,7 +7,7 @@
 }
 .card{
     width: 150px;
-    height: 150px;
+    height: 200px;
     display: inline-block;
     padding: 20px;
     border:yellow;
@@ -16,7 +16,7 @@
     transform: translate3d(40px, 50px, 50px);
     margin-right: 20px;
     margin-bottom: 20px;
-    background-color: transparent;
+    background-color: beige;
 }
 .card h2{
     font-size: 1.2em;
@@ -35,6 +35,6 @@
 } 
 .body{
     background-image: url(pokemon-go-teams.jpg);
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-attachment: fixed;
 }

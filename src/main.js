@@ -2,6 +2,7 @@
 const pokemons = POKEMON.pokemon;
 const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
+const search = document.getElementById("search");
 
 window.onload = () => {
     listPoke (pokemons);
@@ -15,6 +16,7 @@ data.map(pokemon => show.innerHTML += `
     <span>nº${pokemon.num}</span>
     <h2>${pokemon.name}</h2>
     <img src="${pokemon.img}"/>
+    <span>${pokemon.type}</span>
     </div>
 `);
 }
@@ -22,7 +24,6 @@ data.map(pokemon => show.innerHTML += `
 filtro.addEventListener("change", (event) => {
   const filter = app.listTypes(pokemons, event.target.value);
   listPoke(filter);
-
 } );
 
 function lTypes (pokemons) {
@@ -38,3 +39,7 @@ function lTypes (pokemons) {
     filtro.innerHTML += `<option value="none">-- Filtro -- </option>`;
     filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
 }
+
+// search.addEventListener("keydown", (searchEngine)=>{
+
+// });

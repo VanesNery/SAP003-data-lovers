@@ -1,12 +1,12 @@
-require('../src/data.js');
+require("../src/data.js");
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe("funcao filType", () => {
+  it("is a function", () => {
+    expect(typeof app.listTypes).toBe("function");
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it("returns `example`", () => {
+    expect(app.listTypes([{"type": ["Grass","Poison"]}], "Grass")).toEqual([{"type": ["Grass","Poison"]}], "Grass");
   });
-});
+})
