@@ -4,12 +4,13 @@ const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
 
 window.onload = () => {
-    listPoke ();
+    listPoke (pokemons);
     lTypes (pokemons);
 }
 
-function listPoke (){
-pokemons.map(pokemon => show.innerHTML += `
+function listPoke (data){
+show.innerHTML = "";
+data.map(pokemon => show.innerHTML += `
     <div id="card" class="card">
     <span>nº${pokemon.num}</span>
     <h2>${pokemon.name}</h2>
@@ -18,8 +19,11 @@ pokemons.map(pokemon => show.innerHTML += `
 `);
 }
 
-filtro.addEventListener("change", listPokemon);
-const filter = app.listTypes(pokemons, lTypes.value);
+filtro.addEventListener("change", (event) => {
+  const filter = app.listTypes(pokemons, event.target.value);
+  listPoke(filter);
+
+} );
 
 function lTypes (pokemons) {
     const pTypes = [];
