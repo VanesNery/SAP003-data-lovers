@@ -2,7 +2,6 @@
 const pokemons = POKEMON.pokemon;
 const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
-const search = document.getElementById("search");
 
 window.onload = () => {
     listPoke (pokemons);
@@ -40,6 +39,8 @@ function lTypes (pokemons) {
     filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
 }
 
-// search.addEventListener("keydown", (searchEngine)=>{
-
-// });
+const search = document.getElementById("search");
+search.addEventListener("keyup", (search) => {
+    const text = app.listText(pokemons, search.target.value);
+    listPoke(text);
+});
