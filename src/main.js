@@ -4,13 +4,13 @@ const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
 
 window.onload = () => {
-    listPoke (pokemons);
-    lTypes (pokemons);
-}
+  listPoke (pokemons);
+  lTypes (pokemons);
+};
 
-function listPoke (data){
-show.innerHTML = "";
-data.map(pokemon => show.innerHTML += `
+function listPoke (data) {
+  show.innerHTML = "";
+  data.map(pokemon => show.innerHTML += `
     <div id="card" class="card">
     <span>nº${pokemon.num}</span>
     <h2>${pokemon.name}</h2>
@@ -26,21 +26,21 @@ filtro.addEventListener("change", (event) => {
 } );
 
 function lTypes (pokemons) {
-    const pTypes = [];
-    pokemons.map(pokemons => pokemons.type.map(type => {
-        if (!pTypes.includes(type)){
-            pTypes.push(type);
-        } else{
-            return false;
-        }
-    }));
-    filtro.innerHTML += "";
-    filtro.innerHTML += `<option value="none">-- Filtro -- </option>`;
-    filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
+  const pTypes = [];
+  pokemons.map(pokemons => pokemons.type.map(type => {
+    if (!pTypes.includes(type)) {
+      pTypes.push(type);
+    } else {
+      return false;
+    }
+  }));
+  filtro.innerHTML += "";
+  filtro.innerHTML += "<option value=\"none\">-- Filtro -- </option>";
+  filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
 }
 
 const search = document.getElementById("search");
 search.addEventListener("keyup", (search) => {
-    const text = app.listText(pokemons, search.target.value);
-    listPoke(text);
+  const text = app.listText(pokemons, search.target.value);
+  listPoke(text);
 });
