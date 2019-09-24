@@ -2,6 +2,10 @@
 const pokemons = POKEMON.pokemon;
 const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
+const order = document.getElementById("optionOrder");
+const search = document.getElementById("search");
+const egg = document.getElementById("optionEgg");
+const statistic = document.getElementById("computation");
 
 window.onload = () => {
   listPoke (pokemons);
@@ -15,13 +19,14 @@ function listPoke (data) {
     <span>nº ${pokemon.num}</span>
     <h2>${pokemon.name}</h2>
     <img src="${pokemon.img}"/>
-    <span>${pokemon.type}</span>
+    <p><span>${pokemon.type}</span></p>
     </div>
 `);
 }
 
 filtro.addEventListener("change", (event) => {
-  const filter = app.listTypes(pokemons, event.target.value);
+  const poke = pokemons.slice(0, 151);
+  const filter = app.listTypes(poke, event.target.value);
   listPoke(filter);
 });
 
@@ -39,14 +44,21 @@ function lTypes (pokemons) {
   filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join(",");
 }
 
-const search = document.getElementById("search");
 search.addEventListener("keyup", (search) => {
-  const text = app.listText(pokemons, search.target.value);
+  const poke = pokemons.slice(0, 151);
+  const text = app.listText(poke, search.target.value);
   listPoke(text);
 });
 
-const order = document.getElementById("optionOrder");
 order.addEventListener("change", (oOrder) => {
-  const ord = app.listOrder(pokemons, oOrder.target.value);
+  const poke = pokemons.slice(0, 151);
+  const ord = app.listOrder(poke, oOrder.target.value);
   listPoke(ord);
+});
+
+egg.addEventListener("change", (e) => {
+  const poke = pokemons.slice(0, 151);
+  const filterEgg = app.listEgg(poke, e.target.value);
+  statistic.innerHTML = `Existem ${app.printStatic(app.listEgg(poke, egg.value))} % ${egg.value}`;
+  listPoke(filterEgg);
 });
