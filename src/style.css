@@ -4,15 +4,15 @@
     justify-content: center;
 }
 .card{
-    width: 150px;
-    height: 210px;
+    width: 15%;
+    box-sizing: border-box;
     display: inline-block;
     padding: 15px;
     border: #c3a77b;
     border-style: solid;
     border-radius: 10px;
     transform: translate3d(40px, 50px, 50px);
-    margin-right: 20px;
+    margin: 1%;
     margin-bottom: 20px;
     background-color: #f6f6dd;
 }
@@ -20,23 +20,42 @@
     font-size: 1.2em;
 }
 .search{
-    width: 500px;
-    height: 35px;
+    width: 20%;
+    padding: 10px;
     border-radius: 10px;
     transform: translate(50%, 20%)
 }
 .optionFilter{
-    width: 150px;
+    width: 10%;
     height: 35px;
     border-radius: 10px;
-    transform: translate(200%, 20%)
+    transform: translate(220%, 20%)
 } 
+.optionOrder{
+    width: 8%;
+    height: 35px;
+    border-radius: 10px;
+    transform: translate(20%, 20%)
+}
 .body{
     background-image: url(pokemon-go-teams.jpg);
     background-repeat: round;
     background-attachment: fixed;
 }
+.show{
+    width: 92%;
+    margin: 0 8%;
+}
+
+@media (max-width: 500px){
 .root{
-    display: flex;
-    justify-content: flex-start;
+    transform: translate(-40%, 10%);
+}
+.search{
+    width: 80%;
+}
+.card{
+   display: block;
+   width: 60%;
+}
 }

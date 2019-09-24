@@ -12,7 +12,7 @@ function listPoke (data) {
   show.innerHTML = "";
   data.map(pokemon => show.innerHTML += `
     <div id="card" class="card">
-    <span>nº${pokemon.num}</span>
+    <span>nº ${pokemon.num}</span>
     <h2>${pokemon.name}</h2>
     <img src="${pokemon.img}"/>
     <span>${pokemon.type}</span>
@@ -23,7 +23,7 @@ function listPoke (data) {
 filtro.addEventListener("change", (event) => {
   const filter = app.listTypes(pokemons, event.target.value);
   listPoke(filter);
-} );
+});
 
 function lTypes (pokemons) {
   const pTypes = [];
@@ -36,11 +36,17 @@ function lTypes (pokemons) {
   }));
   filtro.innerHTML += "";
   filtro.innerHTML += "<option value=\"none\">-- Filtro -- </option>";
-  filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join("");
+  filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join(",");
 }
 
 const search = document.getElementById("search");
 search.addEventListener("keyup", (search) => {
   const text = app.listText(pokemons, search.target.value);
   listPoke(text);
+});
+
+const order = document.getElementById("optionOrder");
+order.addEventListener("change", (oOrder) => {
+  const ord = app.listOrder(pokemons, oOrder.target.value);
+  listPoke(ord);
 });
