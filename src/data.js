@@ -20,8 +20,32 @@ function listOrder(pokemons, Orde) {
   }
 }
 
+function listEgg (pokemons, egg) {
+  if (egg === "ovo") {
+    return pokemons.filter(poke => !poke.egg.includes("Not in Eggs"));
+  }
+  else if (egg === "2km") {
+    return pokemons.filter(poke => poke.egg.includes("2 km"));
+  }
+  else if (egg === "5km") {
+    return pokemons.filter(poke => poke.egg.includes("5 km"));
+  }
+  else if (egg === "10km") {
+    return pokemons.filter(poke => poke.egg.includes("10 km"));
+  }
+  else {
+    return pokemons;
+  }
+}
+
+function printStatic (data) {
+  return ((data.length*100)/151).toFixed(2);
+}
+
 app = {
   listTypes,
   listText,
-  listOrder
-};
+  listOrder,
+  listEgg,
+  printStatic
+};                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
