@@ -1,68 +1,138 @@
-.Logo{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rodape{
+    margin: 50px;
+}
+
+.Logo{  
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
+
+.show{
+    margin-top: -20px;
+}
+
 .card{
-    width: 16%;
-    height: auto;
     display: inline-block;
-    padding: 5px;
+    width: 10%;
+    height: 200px;
+    padding: 20px;
     border:rgb(255, 136, 0);
     border-style: solid;
     border-radius: 10px;
+    transform: translate3d(70px, 50px, 50px);
+    margin-right: 20px;
+    margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.623);
     opacity: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
-.card h2{
-    font-size: 1.2em;
+.name{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-family: cursive;
 }
+
+.id{
+    display: flex;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.type{
+    display: flex;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
 .search{
-    width: 20%;
-    padding: 10px;
-    border-radius: 10px;
-    transform: translate(50%, 20%);
-}
-.optionFilter{
-    width: 10%;
+    display: inline-block;
+    justify-content: center;
+    width: 300px;
     height: 35px;
     border-radius: 10px;
-    transform: translate(130%, 20%);
-} 
-.optionOrder{
-    width: 8%;
-    height: 35px;
-    border-radius: 10px;
-    transform: translate(170%, 20%);
+    transform: translate(50%, 50%)
 }
+
 .optionEgg{
-    width: 10%;
+    display: inline-block;
+    justify-content: center;
+    width: 150px;
     height: 35px;
     border-radius: 10px;
-    transform: translate(120%, 20%);
+    transform: translate(120%, 50%)
 }
+
+.optionFilter{
+    display: inline-block;
+    justify-content: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    transform: translate(130%, 50%)
+} 
+
+.optionOrder{
+    display: inline-block;
+    justify-content: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    transform: translate(140%, 50%)
+}
+
 .body{
-    background-image: url(pokemon-go-teams.jpg);
-    background-repeat: round;
+    background: url(times-pokemon.png);
     background-attachment: fixed;
     background-size: 100%;
 }
-.show{
-    width: 92%;
-    margin: 0 8%;
+ 
+.computation{
+    padding: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    color: aliceblue;
+    margin-inline-start: 220px;
+    margin-inline-end: 220px;
+    margin-top: 30px;
+    text-shadow: 0 0 0.5em #F87, 0 0 0.5em #F87;
 }
 
-@media (max-width: 500px){
-.root{
-    transform: translate(-40%, 10%);
-}
+@media screen and (min-width: 280px) and (max-width: 980px){
 .search{
     width: 80%;
+    transform: translate(15%, 30%);
 }
 .card{
-   display: block;
-   width: 60%;
+    width: 20%;
+    display: inline-block;
+}
+.name{
+    font-size: 9.3px;
+}
+.optionEgg{
+    width: 25%;
+    transform: translate(55%, 80%);
+}
+.optionFilter{
+    width: 25%;
+    transform: translate(55%, 80%);
+}
+.optionOrder{
+    width: 25%;
+    transform: translate(55%, 80%);
+}
+.computation{
+    transform: translate(-45%, -20%);
+    font-size: 20px;
+    width: 230px;   
+    height: 12px;
+    text-shadow: 0 0 0.5em #F87, 0 0 0.5em #F87;
 }
 }

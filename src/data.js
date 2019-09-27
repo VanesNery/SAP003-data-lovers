@@ -16,12 +16,12 @@ function listOrder(pokemons, Orde) {
     return pokemons.sort((a, b) => (a.name > b.name?-1:1));
   }
   else {
-    return pokemons;
+    document.location.reload(true);
   }
 }
 
 function listEgg (pokemons, egg) {
-  if (egg === "ovo") {
+  if (egg === "ovos") {
     return pokemons.filter(poke => !poke.egg.includes("Not in Eggs"));
   }
   else if (egg === "2km") {
@@ -34,7 +34,7 @@ function listEgg (pokemons, egg) {
     return pokemons.filter(poke => poke.egg.includes("10 km"));
   }
   else {
-    return pokemons;
+    document.location.reload(true);
   }
 }
 
