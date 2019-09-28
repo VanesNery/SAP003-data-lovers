@@ -27,6 +27,7 @@ function listPoke (data) {
 filtro.addEventListener("change", (event) => {
   const poke = pokemons.slice();
   const filter = app.listTypes(poke, event.target.value);
+  statistic.innerHTML= `${app.printStatic(app.listTypes(poke, filtro.value))} % de Pokémons do tipo: ${filtro.value}`;
   listPoke(filter);
 });
 

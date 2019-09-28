@@ -48,9 +48,9 @@ Persona 2:
 - Quer saber quais são os pokémons que nascem em ovo.
 - Quer visualizar os Pokémons por ordem alfabetica.
 --------------------------------
-- Gabriela quer saber quais pokemons nascer em um tipo especifico de ovo (2km, 5km ou 10km).
-- Quer saber a porcentagem de pokemon pque nasce em ovo.
-- Quer ver qual a porcentagem de pokemons por tipo.
+- Gabriela quer saber quais pokémons nascer em um tipo especifico de ovo (2km, 5km ou 10km).
+- Quer saber a porcentagem de pokémon pque nasce em ovo.
+- Quer ver qual a porcentagem de pokémons por tipo.
 - Quer realizar busca por nome.
 
 ## 5. Como Funciona
@@ -59,12 +59,12 @@ Mostrar Pokémons filtrados por tipo e os que nascem em ovos e pelo tipo de ovo 
 
 ## 6. Como Utilizar
 
-Na barra de "Buscar" você pode escrever o nome do Pokemon com a primeira letra em maiuscula, ou caso saba apenas parte do nome, a busca vai apresentar os pokemons que possuem as letras que você digitar.
-No Filtro de Ovos vai apresentar os pokemons que nascem atraves do Ovos, você filtrar por Ovos de 2, 5 e 10 km.
-No Filtro de Tipos apresenta os pokemons pelo tipo deles. Exemplo: Poison, vai apresenta Bulbasaur e suas evoluções.
-No Filtro de "Ordenar" você consegue colocar em ordem alfabetica, crescente e descrescente.
+Na barra de "Buscar" você pode escrever o nome do Pokémon com a primeira letra em maiúscula, ou caso saiba apenas parte do nome, a busca vai apresentar os pokémons que possuem as letras que você digitar.
+No Filtro de Ovos vai apresentar os pokémons que nascem através do Ovos, você filtrar por Ovos de 2, 5 e 10 km.
+No Filtro de Tipos apresenta os pokémons pelo tipo deles. Exemplo: Poison, vai apresenta Bulbasaur e suas evoluções.
+No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e decrescente.
 
-*Obs:. quando escolher o filtro de Ovos, apresentar um calculo estatistico de quanto pokemons nascem atraves de ovos.*
+*Obs:. quando escolher o filtro de Ovos ou de Tipos, apresentar um calculo estatístico de quanto pokémons nascem através de ovos.*
 
 ## 7. Imagem do Site
 
