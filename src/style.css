@@ -87,7 +87,7 @@
 }
 
 .body{
-    background: url(./src/times-pokemon.png);
+    background: url(../src/times-pokemon.png);
     background-attachment: fixed;
     background-size: 100%;
 }
