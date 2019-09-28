@@ -68,11 +68,11 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabetica, crescente e d
 
 ## 7. Imagem do Site
 
-![Site](https://github.com/VanesNery/SAP003-data-lovers/blob/master/src/site.png)
+![Site](./src/site.png)
 
 ## 8. Link da nossa página
 
-[Pokémon Go](https://vanesnery.github.io/SAP003-data-lovers/index.html)
+[Pokémon Go](https://vanesnery.github.io/SAP003-data-lovers/src/index.html)
 
 ## 9. Checklist
 
