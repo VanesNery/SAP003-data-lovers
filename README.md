@@ -64,7 +64,7 @@ No Filtro de Ovos vai apresentar os pokémons que nascem através do Ovos, você
 No Filtro de Tipos apresenta os pokémons pelo tipo deles. Exemplo: Poison, vai apresenta Bulbasaur e suas evoluções.
 No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e decrescente.
 
-*Obs:. quando escolher o filtro de Ovos ou de Tipos, apresentar um calculo estatístico de quanto pokémons nascem através de ovos.*
+*Obs:. quando escolher o filtro de Ovos ou de Tipos, apresentar um calculo estatístico de quanto pokémons nascem através de ovos e quantos pokémons tem o tipo escohido.*
 
 ## 7. Imagem do Site
 
