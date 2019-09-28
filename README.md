@@ -72,7 +72,7 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabetica, crescente e d
 
 ## 8. Link da nossa página
 
-[Pokémon Go](https://vanesnery.github.io/SAP003-data-lovers/)
+[Pokémon Go](https://vanesnery.github.io/SAP003-data-lovers/index.html)
 
 ## 9. Checklist
 
