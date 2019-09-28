@@ -87,7 +87,7 @@
 }
 
 .body{
-    background: url(times-pokemon.png);
+    background: url(https://github.com/VanesNery/SAP003-data-lovers/blob/master/src/times-pokemon.png);
     background-attachment: fixed;
     background-size: 100%;
 }
@@ -112,6 +112,7 @@
 .card{
     width: 20%;
     display: inline-block;
+    padding: 20px;
 }
 .name{
     font-size: 9.3px;
@@ -133,6 +134,5 @@
     font-size: 20px;
     width: 230px;   
     height: 12px;
-    text-shadow: 0 0 0.5em #F87, 0 0 0.5em #F87;
 }
 }
