@@ -19,7 +19,7 @@ function listPoke (data) {
     <span>nº ${pokemon.num}</span>
     <h2 class="name">${pokemon.name}</h2>
     <img src="${pokemon.img}"/>
-    <p><span>${pokemon.type}</span></p>
+    <p><span>Tipo: ${pokemon.type}</span></p>
     </div>
 `);
 }
@@ -41,7 +41,7 @@ function lTypes (pokemons) {
     }
   }));
   filtro.innerHTML += "";
-  filtro.innerHTML += "<option value=\"none\">-- Tipos -- </option>";
+  filtro.innerHTML += "<option value=\"none\">-- Tipos --</option>";
   filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join(",");
 }
 
