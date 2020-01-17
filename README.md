@@ -17,14 +17,14 @@
 
 ## 1. O Projeto
 
-Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final entrega uma pagina web para visualização de um conjunto de dados com a posibilidade de filtar, ordenar, buscar e traz um cálculo agregado. 
+Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final entrega uma pagina web para visualização de um conjunto de dados com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado.
 
 Tema escolhido: Pokémon.
 
 ## 2. Definição do Produto
 
-Esse site foi desenvolvido com o objetivo de ajudar o jogador de Pokémon Go a ter acesso aos Pokémons existentes na região de Kanto. 
-No jogo as informações sobre os Pokémons so são liberadas caso ele seja capturado. O nosso site traz, de uma maneira prática, uma lista com todos os Pokémons da região de kanto, auxiliando assim os jogadores de nível inicial e intermediário, Mostrando Pokémons filtrados por tipo, os que nascem em ovos e pelo tipo de ovo (2km, 5km e 10km), busca por nome e também possibilita o jogador ordená-los por nome de A-Z e de Z-A.
+Esse site foi desenvolvido com o objetivo de ajudar o jogador de Pokémon Go a ter acesso aos Pokémons existentes na região de Kanto.
+No jogo as informações sobre os Pokémons só são liberadas caso ele seja capturado. O nosso site traz, de uma maneira prática, uma lista com todos os Pokémons da região de kanto, auxiliando assim os jogadores de nível inicial e intermediário, Mostrando Pokémons filtrados por tipo, os que nascem em ovos e pelo tipo de ovo (2km, 5km e 10km), busca por nome e também possibilita o jogador ordená-los por nome de A-Z e de Z-A.
 
 ## 3. Definição do Usuário
 
