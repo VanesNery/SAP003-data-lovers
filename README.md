@@ -11,6 +11,7 @@
 * [7. Imagem do Site](#7-Imagem-do-Site)
 * [8. Link da nossa página](#8-Link-da-nossa-página)
 * [9. Checklist](#9-checklist)
+* [10. Pessoas envolvidas no projeto](#10-pessoas-envolvidas-no-projeto)
 
 ***
 
@@ -91,3 +92,8 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 * [X] UI: Permite ordenar dados por um ou mais campos (asc e desc).
 * [X] UI: Permite filtrar dados com base em uma condição.
 * [X] UI: É _responsivo_
+
+## 10. Pessoas Envolvidas no projeto
+
+* Vanessa Alves Nery [](https://github.com/VanesNery)
+* Natalia Thomé [](https://github.com/NatThome)
