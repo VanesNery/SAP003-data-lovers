@@ -11,20 +11,28 @@
 * [7. Imagem do Site](#7-imagem-do-Site)
 * [8. Link da nossa página](#8-link-da-nossa-página)
 * [9. Checklist](#9-checklist)
+<<<<<<< HEAD
 * [10. Pessoas Envolvidas no Projeto](#10-pessoas-envolvidas-no-projeto)
+=======
+* [10. Pessoas envolvidas no projeto](#10-pessoas-envolvidas-no-projeto)
+>>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db
 
 ***
 
 ## 1. O Projeto
 
+<<<<<<< HEAD
 Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final, entregamos uma pagina web para visualização de um conjunto de dados, com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado. 
+=======
+Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final entrega uma pagina web para visualização de um conjunto de dados com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado.
+>>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db
 
 Tema escolhido: Pokémon.
 
 ## 2. Definição do Produto
 
-Esse site foi desenvolvido com o objetivo de ajudar o jogador de Pokémon Go a ter acesso aos Pokémons existentes na região de Kanto. 
-No jogo as informações sobre os Pokémons so são liberadas caso ele seja capturado. O nosso site traz, de uma maneira prática, uma lista com todos os Pokémons da região de kanto, auxiliando assim os jogadores de nível inicial e intermediário, Mostrando Pokémons filtrados por tipo, os que nascem em ovos e pelo tipo de ovo (2km, 5km e 10km), busca por nome e também possibilita o jogador ordená-los por nome de A-Z e de Z-A.
+Esse site foi desenvolvido com o objetivo de ajudar o jogador de Pokémon Go a ter acesso aos Pokémons existentes na região de Kanto.
+No jogo as informações sobre os Pokémons só são liberadas caso ele seja capturado. O nosso site traz, de uma maneira prática, uma lista com todos os Pokémons da região de kanto, auxiliando assim os jogadores de nível inicial e intermediário, Mostrando Pokémons filtrados por tipo, os que nascem em ovos e pelo tipo de ovo (2km, 5km e 10km), busca por nome e também possibilita o jogador ordená-los por nome de A-Z e de Z-A.
 
 ## 3. Definição do Usuário
 
@@ -86,7 +94,14 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 * [X] UI: Permite filtrar dados com base em uma condição.
 * [X] UI: É _responsivo_
 
+<<<<<<< HEAD
 ## 10. Pessoas Envolvidas no Projeto
 
 * Vanessa Nery (https://github.com/VanesNery)
 * Natalia Thomé (https://github.com/NatThome)
+=======
+## 10. Pessoas Envolvidas no projeto
+
+* Vanessa Alves Nery [](https://github.com/VanesNery)
+* Natalia Thomé [](https://github.com/NatThome)
+>>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db
