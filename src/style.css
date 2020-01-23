@@ -1,138 +1,234 @@
-*{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rodape {
+  margin: 50px;
+}
+
+.Logo {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.root {
+  display: inline-block;
+  margin: 0% 19%;
+}
+
+.computer{
+  display: inline-block;
+  margin: 0% 19.5%;
+}
+
+.show {
+  margin: 2% 4% 0% 4%;
+  display: inline-block;
+  padding: 20px;
+  width: 90%;
+}
+
+.card {
+  display: inline-block;
+  width: 16%;
+  height: 200px;
+  padding: 13px 14px 22px 15px;
+  border: rgb(255, 136, 0);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.623);
+  opacity: 95%;
+  font-weight: bold;
+  color: red;
+  font-size: 15px;
+}
+
+.cardInner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  margin: 0 15%;
+}
+
+.cardBack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  margin: 0 0%;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.id {
+  display: flex;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.type {
+  display: flex;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.search {
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.optionEgg {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.optionFilter {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.optionOrder {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.body {
+  background: url(../src/images/times-pokemon.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 99%;
+}
+
+.computation {
+  padding: 20px;
+  font-size: 30px;
+  font-family: cursive;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.623);
+  opacity: 95%;
+  margin-top: 4%;
+}
+
+/* @media screen and (min-width: 280px) and (max-width: 980px) {
+  * {
     margin: 0;
     padding: 0;
-}
+  }
 
-.rodape{
-    margin: 50px;
-}
+  .show{
+    width: 90%;
+    margin: 0 4%;
+  }
 
-.Logo{  
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-}
-
-.show{
-    margin-top: -20px;
-}
-
-.card{
-    display: inline-block;
-    width: 10%;
-    height: 200px;
-    padding: 20px;
-    border:rgb(255, 136, 0);
-    border-style: solid;
-    border-radius: 10px;
-    transform: translate3d(70px, 50px, 50px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.623);
-    opacity: 50%;
-}
-.name{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 15px;
-    font-family: cursive;
-}
-
-.id{
-    display: flex;
-    font-size: 12px;
-    font-family: sans-serif;
-}
-
-.type{
-    display: flex;
-    font-size: 13px;
-    font-family: sans-serif;
-}
-
-.search{
+  .root{
     display: inline-block;
     justify-content: center;
-    width: 300px;
-    height: 35px;
-    border-radius: 10px;
-    transform: translate(50%, 50%)
-}
+    width: 100%;
+    margin: 1% 7% 1% 7%;
+  }
 
-.optionEgg{
-    display: inline-block;
-    justify-content: center;
-    width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    transform: translate(120%, 50%)
-}
-
-.optionFilter{
-    display: inline-block;
-    justify-content: center;
-    width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    transform: translate(130%, 50%)
-} 
-
-.optionOrder{
-    display: inline-block;
-    justify-content: center;
-    width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    transform: translate(140%, 50%)
-}
-
-.body{
-    background: url(../src/times-pokemon.png);
-    background-attachment: fixed;
-    background-size: 100%;
-}
- 
-.computation{
-    padding: 20px;
-    font-size: 20px;
-    font-family: cursive;
-    text-align: center;
-    color: aliceblue;
-    margin-inline-start: 220px;
-    margin-inline-end: 220px;
-    margin-top: 30px;
-    text-shadow: 0 0 0.5em #F87, 0 0 0.5em #F87;
-}
-
-@media screen and (min-width: 280px) and (max-width: 980px){
-.search{
-    width: 80%;
-    transform: translate(15%, 30%);
-}
-.card{
+  .card {
     width: 20%;
+    height: 200px;
     display: inline-block;
     padding: 20px;
-}
-.name{
+  }
+
+  .cardFront,.cardBack {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    margin: 0 15%;
+  }
+
+  .name {
     font-size: 9.3px;
-}
-.optionEgg{
-    width: 25%;
-    transform: translate(55%, 80%);
-}
-.optionFilter{
-    width: 25%;
-    transform: translate(55%, 80%);
-}
-.optionOrder{
-    width: 25%;
-    transform: translate(55%, 80%);
-}
-.computation{
-    transform: translate(-45%, -20%);
+  
+  }
+  .computation {
     font-size: 20px;
-    width: 230px;   
+    width: 230px;
     height: 12px;
-}
+    background-color: rgba(255, 255, 255, 0.623);
+    opacity: 95%;
+    margin-top: 1%;
+    text-align: center;
+  }
+} */
+@media screen and (min-width: 360px) and (max-width: 980px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .show{
+    width: 90%;
+    margin: 0 4%;
+  }
+
+  .root{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    margin: 1% 7% 1% 7%;
+  }
+
+  .card {
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .cardFront,.cardBack {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    margin: 0 15%;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .computation {
+    font-size: 20px;
+    width: 230px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.623);
+    opacity: 95%;
+    margin-top: 1%;
+    text-align: center;
+  }
 }

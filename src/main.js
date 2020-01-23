@@ -1,4 +1,3 @@
-//exibição dos dados na tela 
 const pokemons = POKEMON.pokemon;
 const filtro = document.getElementById("optionFilter");
 const show = document.getElementById("show");
@@ -8,58 +7,78 @@ const egg = document.getElementById("optionEgg");
 const statistic = document.getElementById("computation");
 
 window.onload = () => {
-  listPoke (pokemons);
-  lTypes (pokemons);
+  listPoke(pokemons);
+  lisTypes(pokemons);
 };
 
-function listPoke (data) {
+function listPoke(data) {
   show.innerHTML = "";
-  data.map(pokemon => show.innerHTML += `
+  data.map(
+    pokemon =>
+      (show.innerHTML += `
     <div id="card" class="card">
-    <span>nº ${pokemon.num}</span>
-    <h2 class="name">${pokemon.name}</h2>
-    <img src="${pokemon.img}"/>
-    <p><span>Tipo: ${pokemon.type}</span></p>
+      <div class="cardInner">
+        <div class="cardFront">
+        <img src="${pokemon.img}"/>
+        <h1 class="name">${pokemon.name}</h1>
+        <p>Nº ${pokemon.num}</p>
+        TIPO: ${pokemon.type} 
+      </div>
+      <div class="cardBack">
+      <img src="${pokemon.img}"/>
+        <p>Doce: ${pokemon.candy}</p>
+        <p>Altura: ${pokemon.height} Peso: ${pokemon.weight}</p>
+        <p>FRAQUEZAS: ${pokemon.weaknesses}</p>
+      </div>
     </div>
-`);
+    </div>
+`)
+  );
 }
 
-filtro.addEventListener("change", (event) => {
-  const poke = pokemons.slice();
-  const filter = app.listTypes(poke, event.target.value);
-  statistic.innerHTML= `${app.printStatic(app.listTypes(poke, filtro.value))} % de Pokémons do tipo: ${filtro.value}`;
-  listPoke(filter);
-});
-
-function lTypes (pokemons) {
-  const pTypes = [];
-  pokemons.map(pokemons => pokemons.type.map(type => {
-    if (!pTypes.includes(type)) {
-      pTypes.push(type);
-    } else {
-      return false;
-    }
-  }));
-  filtro.innerHTML += "";
+function lisTypes(pokemons) {
+  const pokeTypes = [];
+  pokemons.filter(pokemons =>
+    pokemons.type.filter(type => {
+      if (!pokeTypes.includes(type)) {
+        pokeTypes.push(type);
+      } else {
+        return false;
+      }
+    })
+  );
   filtro.innerHTML += "<option value=\"none\">-- Tipos --</option>";
-  filtro.innerHTML += pTypes.map(type => `<option value="${type}">${type}</option>`).join(",");
+  filtro.innerHTML += pokeTypes
+    .map(type => `<option value="${type}">${type}</option>`)
+    .join(", ");
 }
 
-search.addEventListener("keyup", (search) => {
+search.addEventListener("keyup", search => {
   const poke = pokemons.slice();
   const text = app.listText(poke, search.target.value);
   listPoke(text);
 });
 
-order.addEventListener("change", (oOrder) => {
+order.addEventListener("change", oOrder => {
   const poke = pokemons.slice();
   const ord = app.listOrder(poke, oOrder.target.value);
   listPoke(ord);
 });
 
-egg.addEventListener("change", (e) => {
+egg.addEventListener("change", e => {
   const poke = pokemons.slice();
   const filterEgg = app.listEgg(poke, e.target.value);
-  statistic.innerHTML = `${app.printStatic(app.listEgg(poke, egg.value))} % de Pokémons nascem de ${egg.value}`;
+  statistic.innerHTML = `<div class="computation">${app.printStatic(
+    app.listEgg(poke, egg.value)
+  )} % de Pokémons nascem de ${egg.value} </div>`;
   listPoke(filterEgg);
+});
+
+filtro.addEventListener("change", event => {
+  const poke = pokemons.slice();
+  const filter = app.listTypes(poke, event.target.value);
+  statistic.innerHTML = `<div class="computation">${app.printStatic(
+    app.listTypes(poke, filtro.value)
+  )} % de Pokémons do tipo: ${filtro.value} </div>`;
+  listPoke(filter);
 });

@@ -47,10 +47,25 @@ it("returns `List Order`", () => {
     {"num": "001", "name": "Bulbasaur", "type": ["Grass", "Poison"]}]);
 });
 
-it("returns `Eggs Km`", () => {
+it("filter eggs 2km", () => {
   expect(app.listEgg([{"num": "001", "name": "Bulbasaur", "type": [ "Grass", "Poison" ], "egg": "2 km", }, 
     {"num": "023", "name": "Ekans", "type": ["Poison"], "egg": "5 km", }, 
-    {"num": "095", "name": "Onix", "type": [ "Rock", "Ground" ], "egg": "10 km", }], "5km")).toEqual([{"num": "023", "name": "Ekans", "type": ["Poison"], "egg": "5 km", }]);
+    {"num": "095", "name": "Onix", "type": [ "Rock", "Ground" ], "egg": "10 km", }], "2km")).toEqual([
+    {"num": "001", "name": "Bulbasaur", "type": [ "Grass", "Poison" ], "egg": "2 km", }]);
+});
+
+it("filter eggs 5km", () => {
+  expect(app.listEgg([{"num": "001", "name": "Bulbasaur", "type": [ "Grass", "Poison" ], "egg": "2 km", }, 
+    {"num": "023", "name": "Ekans", "type": ["Poison"], "egg": "5 km", }, 
+    {"num": "095", "name": "Onix", "type": [ "Rock", "Ground" ], "egg": "10 km", }], "5km")).toEqual([
+    {"num": "023", "name": "Ekans", "type": ["Poison"], "egg": "5 km", }]);
+});
+  
+it("filter eggs 10km", () => {
+  expect(app.listEgg([{"num": "001", "name": "Bulbasaur", "type": [ "Grass", "Poison" ], "egg": "2 km", }, 
+    {"num": "023", "name": "Ekans", "type": ["Poison"], "egg": "5 km", }, 
+    {"num": "095", "name": "Onix", "type": [ "Rock", "Ground" ], "egg": "10 km", }], "10km")).toEqual([
+    {"num": "095", "name": "Onix", "type": [ "Rock", "Ground" ], "egg": "10 km", }]);
 });
 
 it("returns `Statistical Calculation`", () => {

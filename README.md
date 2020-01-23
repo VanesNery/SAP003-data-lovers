@@ -7,16 +7,17 @@
 * [3. Definição do Usuário](#3-definição-do-usuario)
 * [4. História de Usuário](#4-historia-de-usuario)
 * [5. Como Funciona](#5-como-funciona)
-* [6. Como Utilizar](#6-Como-Utilizar)
-* [7. Imagem do Site](#7-Imagem-do-Site)
-* [8. Link da nossa página](#8-Link-da-nossa-página)
+* [6. Como Utilizar](#6-como-utilizar)
+* [7. Imagem do Site](#7-imagem-do-Site)
+* [8. Link da nossa página](#8-link-da-nossa-página)
 * [9. Checklist](#9-checklist)
+* [10. Pessoas Envolvidas no Projeto](#10-pessoas-envolvidas-no-projeto)
 
 ***
 
 ## 1. O Projeto
 
-Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final entrega uma pagina web para visualização de um conjunto de dados com a posibilidade de filtar, ordenar, buscar e traz um cálculo agregado. 
+Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final, entregamos uma pagina web para visualização de um conjunto de dados, com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado. 
 
 Tema escolhido: Pokémon.
 
@@ -29,17 +30,9 @@ No jogo as informações sobre os Pokémons so são liberadas caso ele seja capt
 
 Definimos os usuários a partir da criação de 2 personas:
 
-Persona 1:
-- Nome: Gustavo 
-- Idade: 10 anos 
-- Nivel: Jogador Iniciante 
-- Objetivo: saber quais pokémons estão faltando para completar a pokédex.
+![Persona 1](./src/images/gustavo.jpg)
+![Persona 2](./src/images/gabriela.jpg)
 
-Persona 2:
-- Nome: Gabriela 
-- Idade: 25 anos
-- Nivel: Jogadora Médio 
-- Objetivo: Conhecer mais sobre os pokémons.
 
 ## 4. História de Usuário
 
@@ -68,7 +61,8 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 
 ## 7. Imagem do Site
 
-![Site](./src/site.png)
+![Desktop](./src/images/pokemonDesktop.gif)
+![Site](./src/images/site.png)
 
 ## 8. Link da nossa página
 
@@ -91,3 +85,8 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 * [X] UI: Permite ordenar dados por um ou mais campos (asc e desc).
 * [X] UI: Permite filtrar dados com base em uma condição.
 * [X] UI: É _responsivo_
+
+## 10. Pessoas Envolvidas no Projeto
+
+* Vanessa Nery (https://github.com/VanesNery)
+* Natalia Thomé (https://github.com/NatThome)
