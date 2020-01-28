@@ -1,5 +1,9 @@
 function listTypes (pokemons, typeParametro) {
-  return pokemons.filter(poke => poke.type.includes(typeParametro));
+  if (typeParametro !== "none"){
+    return pokemons.filter(poke => poke.type.includes(typeParametro));
+  }else {
+    document.location.reload(true);
+  }  
 }
 
 function listText(pokemons, text) {
