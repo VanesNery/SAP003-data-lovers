@@ -3,8 +3,11 @@
   padding: 0;
 }
 
-.rodape {
-  margin: 50px;
+.baseboard {
+  background-color: black;
+  text-align: center;
+  color:white;
+  size: 200%;
 }
 
 .Logo {
@@ -24,10 +27,9 @@
 }
 
 .show {
-  margin: 2% 4% 0% 4%;
-  display: inline-block;
-  padding: 20px;
-  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -38,11 +40,12 @@
   border: rgb(255, 136, 0);
   border-style: solid;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.623);
-  opacity: 95%;
+  background-color: #ffffff;
+  opacity: 90%;
   font-weight: bold;
   color: red;
   font-size: 15px;
+  margin: 10px;
 }
 
 .cardInner {
@@ -136,99 +139,23 @@
   margin-top: 4%;
 }
 
-/* @media screen and (min-width: 280px) and (max-width: 980px) {
-  * {
-    margin: 0;
-    padding: 0;
+@media only screen and (max-width: 1000px) {
+  .root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .show{
-    width: 90%;
-    margin: 0 4%;
-  }
-
-  .root{
-    display: inline-block;
-    justify-content: center;
+  .search {
     width: 100%;
-    margin: 1% 7% 1% 7%;
+    margin: 10px;
   }
 
   .card {
-    width: 20%;
-    height: 200px;
+    width: 30%;
+    height: 220px;
     display: inline-block;
     padding: 20px;
   }
 
-  .cardFront,.cardBack {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 5px;
-    margin: 0 15%;
-  }
-
-  .name {
-    font-size: 9.3px;
-  
-  }
-  .computation {
-    font-size: 20px;
-    width: 230px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.623);
-    opacity: 95%;
-    margin-top: 1%;
-    text-align: center;
-  }
-} */
-@media screen and (min-width: 360px) and (max-width: 980px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  .show{
-    width: 90%;
-    margin: 0 4%;
-  }
-
-  .root{
-    display: inline-block;
-    justify-content: center;
-    width: 100%;
-    margin: 1% 7% 1% 7%;
-  }
-
-  .card {
-    width: 20%;
-    height: 200px;
-    display: inline-block;
-    padding: 20px;
-  }
-
-  .cardFront,.cardBack {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 5px;
-    margin: 0 15%;
-  }
-
-  .name {
-    font-size: 20px;
-  }
-
-  .computation {
-    font-size: 20px;
-    width: 230px;
-    height: 12px;
-    background-color: rgba(255, 255, 255, 0.623);
-    opacity: 95%;
-    margin-top: 1%;
-    text-align: center;
-  }
 }

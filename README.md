@@ -11,21 +11,13 @@
 * [7. Imagem do Site](#7-imagem-do-Site)
 * [8. Link da nossa página](#8-link-da-nossa-página)
 * [9. Checklist](#9-checklist)
-<<<<<<< HEAD
 * [10. Pessoas Envolvidas no Projeto](#10-pessoas-envolvidas-no-projeto)
-=======
-* [10. Pessoas envolvidas no projeto](#10-pessoas-envolvidas-no-projeto)
->>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db
 
 ***
 
 ## 1. O Projeto
 
-<<<<<<< HEAD
 Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final, entregamos uma pagina web para visualização de um conjunto de dados, com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado. 
-=======
-Projeto proposto pela Laboratória, desenvolvido em dupla. Como produto final entrega uma pagina web para visualização de um conjunto de dados com a possibilidade de filtrar, ordenar, buscar e traz um cálculo agregado.
->>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db
 
 Tema escolhido: Pokémon.
 
@@ -70,7 +62,7 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 ## 7. Imagem do Site
 
 ![Desktop](./src/images/pokemonDesktop.gif)
-![Site](./src/images/site.png)
+![Mobile](./src/images/pokemonMobile.gif)
 
 ## 8. Link da nossa página
 
@@ -94,14 +86,7 @@ No Filtro de "Ordenar" você consegue colocar em ordem alfabética, crescente e 
 * [X] UI: Permite filtrar dados com base em uma condição.
 * [X] UI: É _responsivo_
 
-<<<<<<< HEAD
 ## 10. Pessoas Envolvidas no Projeto
 
 * Vanessa Nery (https://github.com/VanesNery)
 * Natalia Thomé (https://github.com/NatThome)
-=======
-## 10. Pessoas Envolvidas no projeto
-
-* Vanessa Alves Nery [](https://github.com/VanesNery)
-* Natalia Thomé [](https://github.com/NatThome)
->>>>>>> ad2da55e90a54eca27fbc7c82151348ffec895db

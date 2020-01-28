@@ -12,28 +12,30 @@ window.onload = () => {
 };
 
 function listPoke(data) {
-  show.innerHTML = "";
+  let template = "";
+ 
   data.map(
     pokemon =>
-      (show.innerHTML += `
+      (template += `
     <div id="card" class="card">
       <div class="cardInner">
         <div class="cardFront">
-        <img src="${pokemon.img}"/>
+        <p><img src="${pokemon.img}"/></p>
         <h1 class="name">${pokemon.name}</h1>
         <p>Nº ${pokemon.num}</p>
-        TIPO: ${pokemon.type} 
+        <p>TIPO: ${pokemon.type.join(", ")}</p>
       </div>
       <div class="cardBack">
       <img src="${pokemon.img}"/>
         <p>Doce: ${pokemon.candy}</p>
         <p>Altura: ${pokemon.height} Peso: ${pokemon.weight}</p>
-        <p>FRAQUEZAS: ${pokemon.weaknesses}</p>
+        <p>FRAQUEZAS: ${pokemon.weaknesses.join(", ")}</p>
       </div>
     </div>
     </div>
 `)
   );
+  show.innerHTML = template;
 }
 
 function lisTypes(pokemons) {
