@@ -39,51 +39,50 @@
 
 .card {
   display: inline-block;
-  width: 16%;
-  height: 200px;
-  padding: 13px 14px 22px 15px;
-  border: rgb(255, 136, 0);
-  border-style: solid;
-  border-radius: 10px;
-  background-color: #ffffff;
-  opacity: 90%;
-  font-weight: bold;
+  background-color: rgb(233, 232, 210);
+  text-align: center;
   color: red;
-  font-size: 15px;
-  margin: 10px;
+  font-style: italic;
+  font-weight: bold;
+  width: 16%;
+  height: 270px;
+  margin: 1%;
+  padding: 13px 14px 22px 15px;
+  border: solid rgb(255, 136, 0);
+  border-radius: 15px;
+  opacity: 90%;
 }
-
+  
 .cardInner {
+  width: 100%;
+  height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
 .card:hover .cardInner {
+  background-color:  #ffffff;
   transform: rotateY(180deg);
 }
 
-.cardFront,
-.cardBack {
-  height: 100%;
-  width: 100%;
+.cardFront, .cardBack {
   position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 5px;
-  margin: 0 15%;
 }
-
+.cardFront {
+  background-color: rgb(233, 232, 210);
+}
 .cardBack {
-  height: 100%;
   width: 100%;
-  position: absolute;
-  backface-visibility: hidden;
+  height: 100%;
+  background-color: rgb(233, 232, 210);
   transform: rotateY(180deg);
-  margin: 0 0%;
 }
 
 .name {
-  display: flex;
-  justify-content: flex-start;
+  text-align: center;
   font-size: 20px;
   font-family: cursive;
 }
@@ -139,18 +138,21 @@
   color: red;
   font-weight: bold;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.623);
-  opacity: 95%;
+  background-color: rgb(233, 232, 210);
+  opacity: 90%;
   margin-top: 4%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .root {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
+  .computation {
+    font-size: 15px;
+  }
   .search {
     width: 100%;
     margin: 10px;
@@ -158,8 +160,8 @@
 
   .card {
     width: 30%;
-    height: 220px;
+    height: 270px;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
   }
 }

@@ -26,9 +26,10 @@ function listPoke(data) {
         <p>TIPO: ${pokemon.type.join(", ")}</p>
       </div>
       <div class="cardBack">
-      <img src="${pokemon.img}"/>
+      <p><img src="${pokemon.img}"/></p>
         <p>Doce: ${pokemon.candy}</p>
-        <p>Altura: ${pokemon.height} Peso: ${pokemon.weight}</p>
+        <p>Altura: ${pokemon.height}</p>
+        <p>Peso: ${pokemon.weight}</p>
         <p>FRAQUEZAS: ${pokemon.weaknesses.join(", ")}</p>
       </div>
     </div>
